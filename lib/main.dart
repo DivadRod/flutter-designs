@@ -1,3 +1,4 @@
+import 'package:designs_app/screens/basic_design.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -10,14 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       debugShowCheckedModeBanner: false,
-      home: _buildColumn(),
+      initialRoute: 'basic_design',
+      routes: {'basic_design': (_) => const BaseDesignScreen()},
     );
-  }
-
-  Column _buildColumn() {
-    return const Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-      Text('Hello World'),
-      Text('Hello World'),
-    ]);
   }
 }

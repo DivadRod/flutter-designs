@@ -53,7 +53,7 @@ class _SingleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _CardBackground(
-      child: Column(
+        child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         CircleAvatar(
@@ -68,7 +68,7 @@ class _SingleCard extends StatelessWidget {
           style: TextStyle(color: color, fontSize: 20),
         )
       ],
-    ););
+    ));
   }
 }
 
